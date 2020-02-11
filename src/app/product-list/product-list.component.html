@@ -1,6 +1,10 @@
 <h2>Products</h2>
-
-
+<!-- * is a structural directives that actually shaping or reshaping DOM element typically by adding,removing or manipulating elements to which they are attached.-->
+<div *ngFor="let product of products">
+  <h3>
+    {{product.name}}
+  </h3>
+</div>
 <!-- 
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
