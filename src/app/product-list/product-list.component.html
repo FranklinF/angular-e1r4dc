@@ -5,7 +5,7 @@
     <!--Interpolation renders the propert's value as text and its syntax is {{}}-->
     <!--[] property binding syntax : binidng its model property value for for element attribute-->
     <!-- Interpolation {{ }} lets you render the property value as text; property binding [ ] lets you use the property value in a template expression.-->
-    <a [title]="product.name + ' details'">{{product.name}}</a>
+    <a [title]="product.name +' ' +product.description">{{product.name}}</a>
   </h3>
   <p *ngIf="product.description">
     Description: {{product.description}}
