@@ -3,7 +3,9 @@
 <div *ngFor="let product of products">
   <h3>
     <!--Interpolation renders the propert's value as text and its syntax is {{}}-->
-    {{product.name}}
+    <!--[] property binding syntax : binidng its model property value for for element attribute-->
+    <!-- Interpolation {{ }} lets you render the property value as text; property binding [ ] lets you use the property value in a template expression.-->
+    <a [title]="product.name + ' details'">{{product.name}}</a>
   </h3>
 </div>
 <!-- 
